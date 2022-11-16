@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://parsleyjs.org/src/parsley.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://parsleyjs.org/dist/parsley.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" class="ui form" data-parsley-validate="">
+        <div class="field">
+          <label>Name</label>
+          <input name="name" required="" >
+        </div>
+        <div class="field">
+            <label>Phone</label>
+            <input name="phone" laceholder="0" data-parsley-trigger="keyup" data-parsley-validation-threshold="1" data-parsley-debounce="500" data-parsley-type="digits" data-parsley-minlength="10" data-parsley-maxlength="10" required="">
+            
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" data-parsley-type="email" required="">
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <input name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="You need to enter at least a 20 character comment.." data-parsley-validation-threshold="10" required="">
+        </div>
+        
+        <button class="ui button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
